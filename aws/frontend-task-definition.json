@@ -1,0 +1,29 @@
+{
+  "family": "chatbot-frontend",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::767903311473:role/AmazonECSTaskExecutionRolePolicy",
+  "containerDefinitions": [
+    {
+      "name": "chatbot-frontend",
+      "image": "767903311473.dkr.ecr.ap-south-1.amazonaws.com/chatbot-frontend:latest",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/chatbot-frontend",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "essential": true
+    }
+  ]
+}
