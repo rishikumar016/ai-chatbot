@@ -1,0 +1,148 @@
+:root {
+  --radius: 0.75rem;
+
+  /* Craft AI — Luminous Weightlessness palette */
+  /* Warm neutrals, no pure black, no pure white */
+  --background: #f8f6f1;
+  /* warm parchment base */
+  --foreground: #2d3335;
+  /* soft charcoal, never pure black */
+  --card: #ffffff;
+  /* surface-container-lowest */
+  --card-foreground: #2d3335;
+  --popover: #ffffff;
+  --popover-foreground: #2d3335;
+  --primary: #605f5f;
+  /* neutral dark for CTA */
+  --primary-foreground: #fafaf8;
+  --secondary: #795a00;
+  /* amber/gold signature */
+  --secondary-foreground: #ffffff;
+  --muted: #f1f0eb;
+  /* surface-container-low */
+  --muted-foreground: #7a7c7d;
+  --accent: #ffdf9e;
+  /* secondary_fixed — soft amber */
+  --accent-foreground: #2d3335;
+  --destructive: #c0392b;
+  --border: rgba(173, 179, 181, 0.15);
+  /* ghost border at 15% */
+  --input: #f1f0eb;
+  --ring: #ffce5d;
+  /* amber glow ring */
+  --chart-1: #795a00;
+  --chart-2: #ffce5d;
+  --chart-3: #605f5f;
+  --chart-4: #f1f0eb;
+  --chart-5: #2d3335;
+
+  /* Craft AI signature tokens */
+  --craft-gold: #795a00;
+  --craft-gold-light: #ffce5d;
+  --craft-gold-glow: rgba(255, 206, 93, 0.20);
+  --craft-surface-low: #f1f0eb;
+  --craft-surface-base: #f8f6f1;
+  --craft-surface-bright: #ffffff;
+  --craft-ambient-shadow: 0 20px 40px rgba(45, 51, 53, 0.04), 0 8px 16px rgba(45, 51, 53, 0.02);
+
+  --sidebar: #faf9f6;
+  --sidebar-foreground: #2d3335;
+  --sidebar-primary: #605f5f;
+  --sidebar-primary-foreground: #fafaf8;
+  --sidebar-accent: #f1f0eb;
+  --sidebar-accent-foreground: #2d3335;
+  --sidebar-border: rgba(173, 179, 181, 0.10);
+  --sidebar-ring: #ffce5d;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #e8e6e1;
+  --card: #242424;
+  --card-foreground: #e8e6e1;
+  --popover: #242424;
+  --popover-foreground: #e8e6e1;
+  --primary: #e8e6e1;
+  --primary-foreground: #1a1a1a;
+  --secondary: #ffce5d;
+  --secondary-foreground: #1a1a1a;
+  --muted: #2a2a2a;
+  --muted-foreground: #9a9a96;
+  --accent: #3d3520;
+  --accent-foreground: #ffdf9e;
+  --destructive: #e74c3c;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.10);
+  --ring: #ffce5d;
+  --chart-1: #ffce5d;
+  --chart-2: #795a00;
+  --chart-3: #e8e6e1;
+  --chart-4: #2a2a2a;
+  --chart-5: #9a9a96;
+
+  --craft-gold: #ffce5d;
+  --craft-gold-light: #795a00;
+  --craft-gold-glow: rgba(255, 206, 93, 0.12);
+  --craft-surface-low: #242424;
+  --craft-surface-base: #1a1a1a;
+  --craft-surface-bright: #2a2a2a;
+  --craft-ambient-shadow: 0 20px 40px rgba(0, 0, 0, 0.20), 0 8px 16px rgba(0, 0, 0, 0.12);
+
+  --sidebar: #1e1e1e;
+  --sidebar-foreground: #e8e6e1;
+  --sidebar-primary: #e8e6e1;
+  --sidebar-primary-foreground: #1a1a1a;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #e8e6e1;
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+  --sidebar-ring: #ffce5d;
+}
+
+@theme inline {
+  --font-inter: 'Inter', 'sans-serif';
+  --font-manrope: 'Manrope', 'sans-serif';
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Craft AI design tokens */
+  --color-craft-gold: var(--craft-gold);
+  --color-craft-gold-light: var(--craft-gold-light);
+  --color-craft-gold-glow: var(--craft-gold-glow);
+  --color-craft-surface-low: var(--craft-surface-low);
+  --color-craft-surface-base: var(--craft-surface-base);
+  --color-craft-surface-bright: var(--craft-surface-bright);
+}
